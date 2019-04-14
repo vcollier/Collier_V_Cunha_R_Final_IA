@@ -15,11 +15,11 @@ In the spring of 1986, the TRRA was formed by anglers concerned with the state o
 
 - Clone this repository
 
-- git clone https://github.com/vcollier/Collier_V_Cunha_R_Midterm
+- git clone https://github.com/vcollier/Collier_V_Cunha_R_Final_IA
 
 - Go into the repository
 
-- cd Collier_V_Cunha_R_Midterm
+- cd Collier_V_Cunha_R_Final_IA
 
 Then you can see our site!
 
