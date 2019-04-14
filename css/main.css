@@ -1,0 +1,2995 @@
+@charset "UTF-8";
+/*CSS Doc*/
+
+html {
+  box-sizing: border-box; 
+}
+img
+{
+  max-width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+ body
+ {
+ 	font-family: helvetica, Arial, sans-serif;
+ 	font-size: 25px;
+  color: #002517;
+ }
+
+
+.hidden
+{
+	display: none;
+}
+
+.container
+{
+	  margin: 0px auto;
+  	padding: 0px 0px 0 0px;
+  	max-width: 1200px; 
+}
+
+#mainHeader
+{
+	border-top: 5px solid #8ea75d;
+  border-bottom: 5px solid #8ea75d;
+}
+
+#logo
+{
+	width: 30%;
+	height: 30%;
+	max-width: 130px;
+	margin-top: 30px;
+	margin-left: 10px;
+
+  -webkit-animation: bounce-in-top 1.1s both;
+          animation: bounce-in-top 1.1s both;
+}
+
+@-webkit-keyframes bounce-in-top {
+  0% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateY(-65px);
+            transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateY(-28px);
+            transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes bounce-in-top {
+  0% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateY(-65px);
+            transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateY(-28px);
+            transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+
+#mainNav
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#mainNav button
+{
+	background: url(../images/burger.svg) center no-repeat;
+  	width: 35px;
+  	height: 35px;
+  	border: 0px;
+  	transition: all 600ms ease;
+  	margin-left: auto;
+  	margin-top: -70px;
+  	margin-right: 20px;
+}
+
+#mainNav button.expanded
+{
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#mainNav ul
+{
+  margin-top: 40px;
+  -webkit-animation: mainNav 1.5s both;
+          animation: mainNav 1.5s both;
+}
+
+@keyframes mainNav
+{
+  0%{
+    opacity: 0;
+    letter-spacing: -5px;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 3px;
+  }
+}
+
+
+#mainNav li a
+{
+  display: block;
+  padding: 10px 0 10px 0; /*trbl*/
+  color: #8ea75d;
+  text-align: center; 
+  text-decoration: none;
+}
+
+#mainNav li 
+{
+  border-bottom: 1px solid #efefef; 
+}
+
+#mainNav li:first-child
+{
+  border-top: 1px solid #efefef;
+}
+
+#mainNav li:last-child
+{
+  margin-bottom: 10px;
+}
+
+#burgerCon
+{
+  margin-top: 5px;
+  display: none;
+}
+
+#burgerCon.slideToggle
+{
+  display: block;
+}
+
+#searchBar
+{
+   display: none;
+}
+
+#search
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#mainNav input[type=text]
+{
+  display: block;
+  height: 30px;
+  width: 150px;
+  border: 1px solid #cacaca;
+  border-radius: 3px 0px 0px 3px;
+  background-color: #fefefe;
+  font-size: 10px;
+  color: #0a0a0a;
+  box-shadow: inset 0 1px 2px rgba(10,10,10,0.1);
+}
+
+#mainNav input[type=submit]
+{
+  display: block;
+  width: 50px;
+  border-radius: 0 3px 3px 0;
+  text-align: center;
+  background-color: #8fa771;
+  font-size: 10px;
+  color: #fefefe;
+  border: 0;
+}
+
+#navLeft
+{
+  display: none
+}
+
+#navRight
+{
+  display: none;
+}
+
+#footerLogo
+{
+  width: 30%;
+  max-width: 150px;
+  margin-left: 200px;
+  margin-bottom: -150px;
+}
+
+#mainFooter
+{
+  background-color: #8ea75d;
+  margin: 0 auto;
+  height: 330px;
+  margin-top: 60px;
+}
+
+#mainFooter h3
+{
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#footerNav
+{
+  padding: 10px 0 0 50px;
+}
+
+#footerNav ul li a
+{
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+#address
+{
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+#address ul li
+{
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #fff;
+  line-height: 20px;
+  padding-left: 10px;
+}
+
+#email
+{
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 10px;
+
+}
+
+#copyRight
+{
+  text-align: center;
+  font-size: 10px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+
+
+#backTop img
+{
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+  margin-top: 20px;
+  transition: .5s ease;
+}
+
+#backTop img:hover
+{
+  transform: scale(1.2);
+}
+
+
+/*---------------------------------------INDEX---------------------------------------*/
+
+#heroButton a
+{
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 130px;
+  text-align: center;
+	background-color: #002157;
+	font-size: 15px;
+	color: #fff;
+	text-decoration: none;
+	padding: 15px;
+  transition: all .3s ease;
+
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+          animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+
+#heroButton a:hover
+{
+  background-color: #727272;
+}
+
+#heroCon
+{
+  background: url(../images/hero.jpg) no-repeat;
+  height: 200px;
+}
+
+#heroCon h2
+{
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#heroCon h3
+{
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#welcomeNews
+{
+	margin: 0 auto;
+	background-color: #efefef;
+	padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+#welcomeNews h2
+{
+  color: #002157;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#latest
+{
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: dotted #002157 10px;
+  margin-bottom: 100px;
+}
+
+#latest h2
+{
+  text-align: center;
+  font-size: 30px;
+  color: #002157;
+  font-weight: bold;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+#welcomeNews img
+{
+	display: none;
+}
+
+.outsideButtons
+{
+  width: 160px;
+  height: 50px;
+  background-color: #002157;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  transition: 0.5s ease;
+}
+
+.outsideButtons:hover
+{
+  background-color: #727272;
+}
+
+#insideButtons
+{
+  display: none;
+}
+
+#hatchery
+{
+  background: url(../images/man_nature.jpg) no-repeat;
+  margin: 0 auto;
+  text-align: center;
+  width: 97%;
+  height: 400px;
+  font-size: 25px;
+  color: #002157;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.17);
+}
+
+#hatchery h3
+{
+  background: rgba(400, 400, 400, 0.5);
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+
+#hatchery p
+{
+  height: 400px;
+  background: rgba(400, 400, 400, 0.5);
+  font-size: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+
+#troutButton
+{
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#rodBuilding
+{
+  background: url(../images/group-fishing-2.jpg) no-repeat;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  width: 97%;
+  height: 400px;
+  font-size: 25px;
+  color: #002157;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.17);
+}
+
+#rodBuilding h3
+{
+  background: rgba(400, 400, 400, 0.5);
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+
+#rodBuilding p
+{
+  height: 400px;
+  background: rgba(400, 400, 400, 0.5);
+  font-size: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+
+#rodButton
+{
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+
+#gearHere
+{
+  background: url(../images/uniform.jpg) no-repeat;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  width: 97%;
+  height: 400px;
+  font-size: 25px;
+  color: #002157;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.17);
+}
+
+#gearHere h3
+{
+  background: rgba(400, 400, 400, 0.5);
+  padding-top: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+
+#gearHere p
+{
+  height: 400px;
+  background: rgba(400, 400, 400, 0.5);
+  font-size: 23px;
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 70px;
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+
+#gearButton
+{
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#videoContainer
+{
+  margin: 0 auto;
+  background-color: #efefef;
+  padding-bottom: 30px;
+}
+
+#videoContainer h2
+{
+  color: #002157;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 80px;
+  margin-bottom: 50px;
+}
+
+.video
+{
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+
+#map iframe
+{
+  width: 99%;
+}
+
+#homeLocation h2
+{
+  font-size: 30px;
+  font-weight: bold;
+  color: #002157;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+#homeLocation
+{
+  background-color: #efefef;
+  padding-bottom: 150px;
+}
+
+@media screen and (min-width: 623px) {
+
+  #heroCon h2
+  {
+    padding-top: 70px;
+  }
+
+  #heroButton
+  {
+    margin-top: 50px;
+  }
+
+  #heroCon
+  {
+    background: url(../images/hero-3.jpg) no-repeat;
+    height: 300px;
+  }
+
+
+  #hatchery
+  {
+    display: flex;
+    flex-direction: column;
+    background: url(../images/man-water-2.jpg) no-repeat;
+    margin-top: 50px;
+  }
+
+  #hatchery p
+  {
+    padding-bottom: 200px;
+  }
+
+  #rodBuilding
+  {
+    display: flex;
+    flex-direction: column;
+    background: url(../images/group-fishing-4.jpg) no-repeat;
+  }
+
+  #rodBuilding p
+  {
+    padding-bottom: 200px;
+  }
+
+  #gearHere
+  {
+    display: flex;
+    flex-direction: column;
+    background: url(../images/gear-here-3.jpg) no-repeat;
+  }
+
+  #gearHere p
+  {
+    padding-bottom: 200px;
+  }
+
+  #mainFooter
+  {
+    height: 400px;
+  }
+
+  #footerLogo
+  {
+    display: block;
+    width: 20%;
+    margin-left: auto;
+  }
+
+  #footerNav
+  {
+    padding-top: 50px;
+  }
+
+}
+
+@media screen and (min-width: 700px) {
+
+  #stories
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #hatchery
+  {
+    width: 30%;
+  }
+
+  #hatchery p
+  {
+    font-size: 20px;
+    line-height: 25px;
+    padding-top: 10px;
+  }
+
+  #rodBuilding
+  {
+    width: 30%;
+  }
+
+  #rodBuilding p
+  {
+    font-size: 20px;
+    line-height: 25px;
+    padding-top: 10px;
+  }
+
+  #gearHere
+  {
+    width: 30%;
+  }
+
+  #gearHere h3
+  {
+    padding-top: 20px;
+  }
+
+  #gearHere p
+  {
+    font-size: 20px;
+    line-height: 25px;
+    padding-top: 25px;
+  }
+
+  #insideButtons
+  {
+    display: flex;
+    background-color: #efefef;
+  }
+
+  .insideButton
+  {
+    display: block;
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #002157;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    transition: .5s ease;
+  }
+
+  .insideButton:hover
+  {
+    background-color: #727272;
+  }
+
+
+  #troutButton
+  {
+    display: none;
+  }
+
+  #rodButton
+  {
+    display: none;
+  }
+
+  #gearButton
+  {
+    display: none;
+  }
+
+  .video
+  {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 870px) {
+
+  #heroCon
+  {
+    background: url(../images/hero-3.jpg);
+    height: 400px;
+  }
+
+  #heroCon h2
+  {
+    font-size: 60px;
+    padding-top: 70px;
+  }
+
+  #heroCon h3
+  {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+
+  #heroButton
+  {
+    margin-top: 90px;
+  }
+
+  #burgerCon
+  {
+    display: none;
+  }
+
+  #mainNav
+  {
+    display: none;
+  }
+
+  #logo
+  {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+
+  #navLeft
+{
+  display: block;
+  width: 290px;
+  height: 20px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-top: -80px;
+  margin-bottom: 30px;
+}
+
+#navLeft ul
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+
+#navLeft ul li a
+{
+  color: #727272;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .5s ease;
+}
+
+#navLeft ul li a:hover
+{
+  color: #002157;
+  text-decoration: line-through; 
+  text-decoration-color: #002157;
+}
+
+#navRight
+{
+  display: block;
+  width: 300px;
+  height: 20px;
+  margin-left: auto;
+  padding-right: 30px;
+  margin-top: -45px;
+  margin-bottom: 150px;
+}
+
+#navRight ul
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+#navRight ul li a
+{
+  color: #727272;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .5s ease;
+}
+
+#navRight ul li a:hover
+{
+  color: #002157;
+  text-decoration: line-through; 
+  text-decoration-color: #002157;
+}
+
+#searchBar
+{
+  width: 300px;
+  height: 27px;
+  display: block;
+  margin-left: auto;
+  margin-top: -220px;
+  margin-bottom: 100px;
+}
+
+#searchBar input
+{
+  width: 150px;
+  padding: 6px 15px 6px 35px;
+  border: 1px solid #d1d1d1;
+  border-radius: 20px;
+  text-shadow: 0 2px 3px rgba(0,0,0,.1);
+  box-shadow: 0 1px 3px rgba(0,0,0,.15) inset;
+}
+
+#searchBar button
+{
+  background-color: #8ea75d;
+  color: #fff;
+  padding: 5px;
+  width: 60px;
+}
+
+}
+
+@media screen and (min-width: 1000px) {
+
+  #navLeft 
+  {
+    width: 400px;
+  }
+
+  #navRight
+  {
+    width: 400px;
+  }
+}
+
+/*----------------------------------------ABOUT----------------------------------------*/
+
+#history
+{
+  border-bottom: 5px solid #8ea75d;
+  padding-bottom: 30px;
+}
+
+#history h2
+{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #002157;
+}
+
+#history p
+{
+  color: #002157;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  line-height: 25px;
+}
+
+.moreContent
+{
+  display: none;
+}
+
+.moreContent.slideToggle
+{
+  display: block;
+}
+
+#readMore
+{
+  display: block;
+  width: 100px;
+  padding: 5px;
+  border: none;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #002157;
+  font-size: 15px;
+  color: #fff;
+  transition: .5s ease;
+}
+
+#readMore:hover
+{
+  background-color: #727272;
+}
+
+#about h3
+{
+  color: #002157;
+  font-size: 23px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#about ul li
+{
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #002157;
+  list-style-type: circle;
+}
+
+.boldLetter
+{
+  font-weight: bold;
+}
+
+#aboutMore
+{
+  border-bottom: 5px solid #8ea75d;
+}
+
+#aboutMore img
+{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#aboutMore h4
+{
+  color: #002157;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#aboutMore ul li
+{
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #002157;
+  list-style-type: circle;
+}
+
+#aboutVideo h3
+{
+  font-size: 30px;
+  color: #002157;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#team
+{
+  width: 400px;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+
+#team h3
+{
+  text-align: center;
+  font-size: 30px;
+  color: #002157;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+#team h4
+{
+  text-align: center;
+  font-size: 30px;
+  color: #002157;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+#team ul
+{
+  margin-bottom: 50px;
+}
+
+#team ul li h5
+{
+  text-align: left;
+  font-size: 20px;
+  color: #002157;
+  margin-top: 30px;
+}
+
+#team ul li p
+{
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+  color: #002157;
+}
+
+#list2
+{
+  width: 35%;
+  display: block;
+  margin-left: auto;
+  margin-top: -230px;
+  text-align: right;
+}
+
+#volunteer
+{
+  width: 400px;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+
+#volunteer h3
+{
+  text-align: center;
+  font-size: 30px;
+  color: #002157;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+#volunteer h4
+{
+  text-align: center;
+  font-size: 30px;
+  color: #002157;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+#volunteer ul
+{
+  margin-bottom: 50px;
+}
+
+#volunteer ul li h5
+{
+  text-align: left;
+  font-size: 20px;
+  color: #002157;
+  margin-top: 30px;
+}
+
+#volunteer ul li p
+{
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+  color: #002157;
+}
+
+#listFour
+{
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-top: -295px;
+  text-align: right;
+  padding-left: 55px;
+}
+
+@media screen and (min-width: 700px) {
+
+  .moreContent
+  {
+    display: block;
+  }
+
+  #readMore
+  {
+    display: none;
+  }
+
+  #about
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #about picture
+  {
+    margin-top: 40px;
+  }
+
+  #sec1
+  {
+    width: 400px;
+  }
+
+  #sec1 ul li
+  {
+    list-style: none;
+  }
+
+    #aboutMore
+  {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  #aboutMore picture
+  {
+    margin-top: 40px;
+  }
+
+  #sec2
+  {
+    width: 400px;
+  }
+
+  #sec2 ul li
+  {
+    list-style: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+
+  #history p
+  {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+  }
+}
+
+/*-------------------------------------EVENTS-----------------------------------------*/
+
+#eventTitle h2
+{
+  color: #002157;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#eventTitle h3
+{
+  color: #002157;
+  font-size: 23px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.moreInfo
+{
+  width: 110px;
+  display: block;
+  background-color: #002157;
+  padding: 15px;
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 auto;
+  overflow: visible;
+  margin-top: 200px;
+  transition: 0.5s ease;
+}
+
+.moreInfo:hover
+{
+  background-color: #727272;
+}
+
+
+#moreButton
+{
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: #002157;
+  color: #fff;
+  font-size: 15px;
+  padding: 5px;
+  width: 100px;
+  transition: .5s ease;
+}
+
+#moreButton:hover
+{
+  background-color: #727272;
+}
+
+.eventRow3
+{
+  display: none;
+}
+
+.eventRow3.slideToggle
+{
+  display: block;
+}
+
+.eventList
+{
+  background-color: #efefef;
+}
+
+.eventList div
+{
+  margin-top: 120px;
+}
+
+#event1
+{
+  background: url(../images/man_fish.jpg) no-repeat;
+  height: 250px;
+}
+
+#event1 h3
+{
+  text-align: center;
+  color: #002157;
+  height: 100px;
+  line-height: 440px;
+}
+
+#event1 h4
+{
+  display: none
+}
+
+#event1 p
+{
+  display: none;
+}
+
+#event2
+{
+  background: url(../images/open-river.jpg) no-repeat;
+  height: 250px;
+}
+
+#event2 h3
+{
+  text-align: center;
+  color: #002157;
+  height: 100px;
+  line-height: 440px;
+}
+
+#event2 h4
+{
+  display: none
+}
+
+#event2 p
+{
+  display: none;
+}
+
+#event3
+{
+  background: url(../images/group-fishing-2.jpg) no-repeat;
+  height: 250px;
+}
+
+#event3 h3
+{
+  text-align: center;
+  color: #002157;
+  height: 100px;
+  line-height: 440px;
+}
+
+#event3 h4
+{
+  display: none
+}
+
+#event3 p
+{
+  display: none;
+}
+
+#event4
+{
+  background: url(../images/little-fish.jpg) no-repeat;
+  height: 250px;
+}
+
+#event4 h3
+{
+  text-align: center;
+  color: #002157;
+  height: 100px;
+  line-height: 440px;
+}
+
+#event4 h4
+{
+  display: none
+}
+
+#event4 p
+{
+  display: none;
+}
+
+#event5
+{
+  background: url(../images/white-fish.jpg) no-repeat;
+  height: 250px;
+}
+
+#event5 h3
+{
+  text-align: center;
+  color: #002157;
+  height: 100px;
+  line-height: 440px;
+}
+
+#event5 h4
+{
+  display: none
+}
+
+#event5 p
+{
+  display: none;
+}
+
+#event6
+{
+  background: url(../images/group-fishing.jpg) no-repeat;
+  height: 250px;
+}
+
+#event6 h3
+{
+  text-align: center;
+  color: #002157;
+  height: 100px;
+  line-height: 440px;
+}
+
+#event6 h4
+{
+  display: none
+}
+
+#event6 p
+{
+  display: none;
+}
+
+#event7
+{
+  background: url(../images/family-fishing-day.jpg) no-repeat;
+  height: 250px;
+}
+
+#event7 h3
+{
+  text-align: center;
+  color: #002157;
+  height: 100px;
+  line-height: 440px;
+}
+
+#event7 h4
+{
+  display: none
+}
+
+#event7 p
+{
+  display: none;
+}
+
+#event8
+{
+  background: url(../images/grab-fish-water.jpg) no-repeat;
+  height: 250px;
+}
+
+#event8 h3
+{
+  text-align: center;
+  color: #002157;
+  height: 100px;
+  line-height: 440px;
+}
+
+#event8 h4
+{
+  display: none
+}
+
+#event8 p
+{
+  display: none;
+}
+
+#event9
+{
+  background: url(../images/grey-river.jpg) no-repeat;
+  height: 250px;
+}
+
+#event9 h3
+{
+  text-align: center;
+  color: #002157;
+  height: 100px;
+  line-height: 440px;
+}
+
+#event9 h4
+{
+  display: none
+}
+
+#event9 p
+{
+  display: none;
+}
+
+#event10
+{
+  background: url(../images/fishing-hands.jpg) no-repeat;
+  height: 250px;
+}
+
+#event10 h3
+{
+  text-align: center;
+  color: #002157;
+  height: 100px;
+  line-height: 440px;
+}
+
+#event10 h4
+{
+  display: none
+}
+
+#event10 p
+{
+  display: none;
+}
+
+#event11
+{
+  background: url(../images/crystal-water.jpg) no-repeat;
+  height: 250px;
+}
+
+#event11 h3
+{
+  text-align: center;
+  color: #002157;
+  height: 100px;
+  line-height: 440px;
+}
+
+#event11 h4
+{
+  display: none
+}
+
+#event11 p
+{
+  display: none;
+}
+
+#event12
+{
+  background: url(../images/guy-holding-fish.jpg) no-repeat;
+  height: 250px;
+}
+
+#event12 h3
+{
+  text-align: center;
+  color: #002157;
+  height: 100px;
+  line-height: 440px;
+}
+
+#event12 h4
+{
+  display: none
+}
+
+#event12 p
+{
+  display: none;
+}
+
+@media screen and (min-width: 420px) {
+
+  .moreInfo
+  {
+    margin-top: 330px;
+    width: 200px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  #moreButton
+  {
+    margin-top: 150px;
+  }
+
+  #event1
+  {
+    background: url(../images/man-fish-3.jpg) no-repeat;
+    height: 400px;
+  }
+
+  #event1 h3
+  {
+    text-align: center;
+    font-size: 23px;
+    color: #002157;
+    height: 100px;
+    line-height: 690px;
+  } 
+
+  #event2
+  {
+    background: url(../images/open-river-2.jpg) no-repeat;
+    height: 400px;
+  }
+
+  #event2 h3
+  {
+    text-align: center;
+    font-size: 23px;
+    color: #002157;
+    height: 100px;
+    line-height: 690px;
+  } 
+
+  #event3
+  {
+    background: url(../images/group-fishing-3.jpg) no-repeat;
+    height: 400px;
+  }
+
+  #event3 h3
+  {
+    text-align: center;
+    font-size: 23px;
+    color: #002157;
+    height: 100px;
+    line-height: 690px;
+  } 
+
+  #event4
+  {
+    background: url(../images/little-fish-hand-2.jpg) no-repeat;
+    height: 400px;
+  }
+
+  #event4 h3
+  {
+    text-align: center;
+    font-size: 23px;
+    color: #002157;
+    height: 100px;
+    line-height: 690px;
+  } 
+
+  #event5
+  {
+    background: url(../images/white-fish-2.jpg) no-repeat;
+    height: 400px;
+  }
+
+  #event5 h3
+  {
+    text-align: center;
+    font-size: 23px;
+    color: #002157;
+    height: 100px;
+    line-height: 690px;
+  } 
+
+  #event6
+  {
+    background: url(../images/group-fishing-5.jpg) no-repeat;
+    height: 400px;
+  }
+
+  #event6 h3
+  {
+    text-align: center;
+    font-size: 23px;
+    color: #002157;
+    height: 100px;
+    line-height: 690px;
+  } 
+
+  #event7
+  {
+    background: url(../images/fishing-hands-mob.jpg) no-repeat;
+    height: 400px;
+  }
+
+  #event7 h3
+  {
+    text-align: center;
+    font-size: 23px;
+    color: #002157;
+    height: 100px;
+    line-height: 690px;
+  } 
+
+  #event8
+  {
+    background: url(../images/grab-fish-mob.jpg) no-repeat;
+    height: 400px;
+  }
+
+  #event8 h3
+  {
+    text-align: center;
+    font-size: 23px;
+    color: #002157;
+    height: 100px;
+    line-height: 690px;
+  } 
+
+  #event9
+  {
+    background: url(../images/forest-and-river-mob.jpg) no-repeat;
+    height: 400px;
+  }
+
+  #event9 h3
+  {
+    text-align: center;
+    font-size: 23px;
+    color: #002157;
+    height: 100px;
+    line-height: 690px;
+  } 
+
+  #event10
+  {
+    background: url(../images/guy-holding-fish-mob.jpg) no-repeat;
+    height: 400px;
+  }
+
+  #event10 h3
+  {
+    text-align: center;
+    font-size: 23px;
+    color: #002157;
+    height: 100px;
+    line-height: 690px;
+  } 
+
+  #event11
+  {
+    background: url(../images/stairs-mob.jpg) no-repeat;
+    height: 400px;
+  }
+
+  #event11 h3
+  {
+    text-align: center;
+    font-size: 23px;
+    color: #002157;
+    height: 100px;
+    line-height: 690px;
+  } 
+
+  #event12
+  {
+    background: url(../images/fish-table-mob.jpg) no-repeat;
+    height: 400px;
+  }
+
+  #event12 h3
+  {
+    text-align: center;
+    font-size: 23px;
+    color: #002157;
+    height: 100px;
+    line-height: 690px;
+  } 
+
+
+}
+
+@media screen and (min-width: 623px) {
+
+  #eventTitle
+  {
+    margin-top: 60px;
+  }
+
+  #eventTitle h2
+  {
+    font-size: 40px;
+  }
+
+  #eventTitle h3
+  {
+    margin-top: 30px;
+    font-size: 30px;
+  }
+
+
+  .moreInfo
+  {
+    margin-top: 330px;
+    width: 100px;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+    .eventRow1
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #event1
+  {
+    background: url(../images/man-fish-2.jpg);
+    width: 33%;
+    margin: 5px;
+  }
+
+  #event1 h3
+  {
+    font-size: 25px;
+    line-height: 25px;
+    background: rgba(200,200,200,0.7);
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+
+  }
+
+  #event2
+  {
+    background: url(../images/open-river-tab.jpg);
+    width: 33%;
+    margin: 5px;
+  }
+
+  #event2 h3
+  {
+    font-size: 25px;
+    line-height: 25px;
+    background: rgba(200,200,200,0.7);
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+
+  }
+
+  #event3
+  {
+    background: url(../images/group-fishing-tab.jpg);
+    width: 33%;
+    margin: 5px;
+  }
+
+   #event3 h3
+  {
+    font-size: 25px;
+    line-height: 25px;
+    background: rgba(200,200,200,0.7);
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+
+  }
+
+
+  .eventRow2
+  {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #event4
+  {
+    background: url(../images/little-fish-tab.jpg);
+    width: 33%;
+    margin: 5px;
+  }
+
+   #event4 h3
+  {
+    font-size: 25px;
+    line-height: 25px;
+    background: rgba(200,200,200,0.7);
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+
+  }
+
+  #event5
+  {
+    background: url(../images/white-fish-tab.jpg);
+    width: 33%;
+    margin: 5px;
+  }
+
+  #event5 h3
+  {
+    font-size: 25px;
+    line-height: 25px;
+    background: rgba(200,200,200,0.7);
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+
+  }
+
+  #event6
+  {
+    background: url(../images/group-tab.jpg);
+    width: 33%;
+    margin: 5px;
+  }
+
+  #event6 h3
+  {
+    font-size: 25px;
+    line-height: 25px;
+    background: rgba(200,200,200,0.7);
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+
+  }
+
+  .allowFlex
+  {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #event7
+  {
+    background: url(../images/fishing-hands-tab.jpg);
+    width: 33%;
+    margin: 5px;
+  }
+
+  #event7 h3
+  {
+    font-size: 25px;
+    line-height: 25px;
+    background: rgba(200,200,200,0.7);
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+
+  }
+
+  #event8
+  {
+    background: url(../images/grab-fish-tab.jpg);
+    width: 33%;
+    margin: 5px;
+  }
+
+  #event8 h3
+  {
+    font-size: 25px;
+    line-height: 25px;
+    background: rgba(200,200,200,0.7);
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+
+  }
+
+  #event9
+  {
+    background: url(../images/forest-and-river-tab.jpg);
+    width: 33%;
+    margin: 5px;
+  }
+
+  #event9 h3
+  {
+    font-size: 25px;
+    line-height: 25px;
+    background: rgba(200,200,200,0.7);
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+
+  }
+
+  #event10
+  {
+    background: url(../images/guy-holding-fish-tab.jpg);
+    width: 33%;
+    margin: 5px;
+  }
+
+  #event10 h3
+  {
+    font-size: 25px;
+    line-height: 25px;
+    background: rgba(200,200,200,0.7);
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+
+  }
+
+  #event11
+  {
+    background: url(../images/stairs-tab.jpg);
+    width: 33%;
+    margin: 5px;
+  }
+
+  #event11 h3
+  {
+    font-size: 25px;
+    line-height: 25px;
+    background: rgba(200,200,200,0.7);
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+
+  }
+
+  #event12
+  {
+    background: url(../images/fish-table-tab.jpg);
+    width: 33%;
+    margin: 5px;
+  }
+
+  #event12 h3
+  {
+    font-size: 25px;
+    line-height: 25px;
+    background: rgba(200,200,200,0.7);
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+
+  }
+
+}
+
+/*-----------------------------------PROJECTS--------------------------------------*/
+
+#projectWelcome 
+{
+  border-bottom: 5px solid #8ea75d;
+}
+
+#projectWelcome h2
+{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #002157;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#projectWelcome p
+{
+  font-size: 18px;
+  color: #002157;
+  text-align: center;
+  padding: 20px;
+  line-height: 23px;
+}
+
+.projectList
+{
+  display: block;
+  margin: 0 auto;
+  width: 99%;
+}
+
+.projectList h2
+{
+  font-size: 26px;
+  font-weight: bold;
+  color: #002157;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#projOne
+{
+  background: url(../images/men_and_fish.jpg) no-repeat;
+  height: 300px;
+  margin-top: 30px;
+  box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.17);
+  overflow: hidden
+}
+
+#projOne h3
+{
+  background: rgba(300,300,300,0.7);
+  padding: 20px 10px 20px 10px;
+  color: #002157;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center
+}
+
+#projOne p
+{
+  background: rgba(300,300,300,0.7);
+  padding: 20px 20px 180px 20px;
+  color: #002157;
+  font-size: 20px;
+  text-align: center
+}
+
+#projTwo
+{
+  background: url(../images/fish-bag.jpg) no-repeat;
+  height: 300px;
+  margin-top: 30px;
+  box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.17);
+  overflow: hidden;
+}
+
+#projTwo h3
+{
+  background: rgba(300,300,300,0.7);
+  padding: 20px 10px 20px 10px;
+  color: #002157;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center
+}
+
+#projTwo p
+{
+  background: rgba(300,300,300,0.7);
+  padding: 20px 20px 180px 20px;
+  color: #002157;
+  font-size: 20px;
+  text-align: center
+}
+
+#projThree
+{
+  background: url(../images/height-fish.jpg) no-repeat;
+  height: 300px;
+  margin-top: 30px;
+  box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.17);
+  overflow: hidden;
+}
+
+#projThree h3
+{
+  background: rgba(300,300,300,0.7);
+  padding: 20px 10px 10px 10px;
+  color: #002157;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center
+}
+
+#projThree p
+{
+  background: rgba(300,300,300,0.7);
+  padding: 20px 20px 200px 20px;
+  color: #002157;
+  font-size: 20px;
+  text-align: center
+}
+
+.projectButton
+{
+  display: block;
+  width: 120px;
+  background-color: #002157;
+  padding: 20px;
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-top: -150px;
+}
+
+.projectButton:hover
+{
+  background-color: #727272;
+}
+
+
+#extraCon 
+{
+  display: none;
+}
+
+@media screen and (min-width: 420px) {
+
+  #projOne
+  {
+    background: url(../images/proj-one.jpg);
+  }
+
+  #projTwo
+  {
+    background: url(../images/proj-two.jpg);
+  }
+
+  #projThree
+  {
+    background: url(../images/proj-three.jpg);
+  }
+}
+
+@media screen and (min-width: 623px) {
+
+  #allowFlex
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#projOne
+{
+  background: url(../images/proj-one.jpg) no-repeat;
+  width: 30%;
+  height: 300px;
+  margin-top: 30px;
+  box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.17);
+}
+
+#projOne h3
+{
+  background: rgba(300,300,300,0.7);
+  padding: 20px 10px 10px 10px;
+  color: #002157;
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center
+}
+
+#projOne p
+{
+  background: rgba(300,300,300,0.7);
+  padding: 0px 10px 180px 10px;
+  color: #002157;
+  font-size: 16px;
+  text-align: center
+}
+
+#projTwo
+{
+  background: url(../images/proj-two.jpg) no-repeat;
+  width: 30%;
+  height: 300px;
+  margin-top: 30px;
+  box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.17);
+}
+
+#projTwo h3
+{
+  background: rgba(300,300,300,0.7);
+  padding: 20px 10px 10px 10px;
+  color: #002157;
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center
+}
+
+#projTwo p
+{
+  background: rgba(300,300,300,0.7);
+  padding: 0px 20px 180px 20px;
+  color: #002157;
+  font-size: 16px;
+  text-align: center
+}
+
+#projThree
+{
+  background: url(../images/proj-three.jpg) no-repeat;
+  width: 30%;
+  height: 300px;
+  margin-top: 30px;
+  box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.17);
+}
+
+#projThree h3
+{
+  background: rgba(300,300,300,0.7);
+  padding: 20px 10px 5px 10px;
+  color: #002157;
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center
+}
+
+#projThree p
+{
+  background: rgba(300,300,300,0.7);
+  padding: 0px 20px 200px 20px;
+  color: #002157;
+  font-size: 16px;
+  text-align: center
+}
+
+#extraCon h2
+{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #002157;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+#extraCon
+{
+  display: block;
+  width:600px;
+  height:400px;
+  background: rgba(0,0,0,0);
+  margin:0 auto;
+  position: relative;
+  overflow: hidden;
+
+}
+
+#gallery
+{
+  width:5400px;
+  position: absolute;
+  left: 0 !important; 
+}
+
+#gallery img
+{
+  float:left;
+}
+
+#gallery.animateBanners
+{
+  left: -600px;
+}
+
+}
+
+@media screen and (min-width: 830px) {
+
+  #projOne h3
+  {
+    font-size: 25px;
+  }
+
+  #projOne p
+  {
+    font-size: 20px;
+  }
+
+  #projTwo h3
+  {
+    font-size: 25px;
+  }
+
+  #projTwo p
+  {
+    font-size: 20px;
+  }
+
+  #projThree h3
+  {
+    font-size: 25px;
+  }
+
+  #projThree p
+  {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+
+  #projOne h3
+  {
+    font-size: 27px;
+    padding: 20px 10px 30px 10px;
+  }
+
+  #projOne p
+  {
+    font-size: 23px;
+  }
+
+  #projTwo h3
+  {
+    font-size: 27px;
+    padding: 20px 10px 30px 10px;
+  }
+
+  #projTwo p
+  {
+    font-size: 23px;
+  }
+
+  #projThree h3
+  {
+    font-size: 27px;
+    padding: 20px 10px 30px 10px;
+  }
+
+  #projThree p
+  {
+    font-size: 23px;
+  }
+}
+
+
+/*--------------------------------NEWS---------------------------------*/
+
+#newsLetters h2
+{
+  font-size: 30px;
+  font-weight: bold;
+  color: #002157;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#newsLetters h3
+{
+  font-size: 23px;
+  color: #002157;
+  text-align: center;
+}
+
+#newsLetters h4
+{
+  font-size: 20px;
+  color: #002157;
+  text-align: center;
+  padding: 30px;
+  line-height: 29px;
+}
+
+#signUp
+{
+  background-color: #efefef;
+}
+
+#newsForm
+{
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+#newsForm input
+{
+  margin: 10px;
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  background: rgba(200,200,200,0.5);
+}
+
+#signUpButton
+{
+  display: block;
+  margin: 0 auto;
+  background-color: #002157;
+  border: none;
+  color: #fff;
+  width: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  transition: .5s ease;
+}
+
+#signUpButton:hover
+{
+  background-color: #727272;
+}
+
+.archives h2
+{
+  font-size: 30px;
+  font-weight: bold;
+  color: #002157;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#archiveList
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+  background-color: #efefef;
+  padding: 20px;
+}
+
+#archiveList ul li
+{
+  padding: 10px;
+  font-size: 20px;
+}
+
+#archiveList ul li a
+{
+  color: #002157;
+  text-decoration: none
+}
+
+#archiveList ul li a:hover
+{
+  cursor: pointer;
+  text-decoration: line-through;
+}
+
+#speachBubble img
+{
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: -60px;
+  height: 250px;
+}
+
+#speachBubble h3
+{
+  font-size: 20px;
+  position: relative;
+  color: #002157;
+  width: 250px;
+  padding-right: 30px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 100px;
+  margin-bottom: -200px;
+}
+
+@media screen and (min-width: 730px) {
+
+  #newsForm input
+  {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    margin-bottom: 10px;
+  }
+
+}
+
+/*----------------------------------------CONTACT--------------------------------------*/
+
+.contactTitle h2
+{
+  font-size: 30px;
+  font-weight: bold;
+  color: #002157;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contactTitle h3
+{
+  font-size: 25px;
+  color: #002157;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contactForm 
+{
+  display: block;
+  padding-top: 20px;
+  height: 300px;
+  background-color: #efefef;
+  margin: 0 auto;
+  border-bottom: 5px solid #8ea75d;
+}
+
+.contactForm div
+{
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.contactForm div input
+{
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#emailForm input
+{
+  width: 285px;
+  padding: 5px;
+}
+
+#comments textarea
+{
+  padding: 5px;
+  width: 285px;
+  margin-top: 10px;
+  border:  rgba(200,200,200,0.9) solid 1px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+#submitButton
+{
+  display: block;
+  width: 200px;
+  background-color: #002157;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: .5s ease;
+}
+
+#submitButton:hover
+{
+  background-color: #727272;
+}
+
+#addressInfo h2
+{
+  font-size: 30px;
+  color: #002157;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#addressInfo ul li
+{
+  color: #002157;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 10px 0 10px;
+  line-height: 26px;
+}
+
+#addressInfo ul li:first-child
+{
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+#location h2
+{
+  font-size: 30px;
+  font-weight: bold;
+  color: #002157;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#map
+{
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#guests h2
+{
+  font-size: 30px;
+  font-weight: bold;
+  color: #002157;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#guests h3
+{
+  font-size: 23px;
+  color: #002157;
+  text-align: center;
+}
+
+#guests p
+{
+  font-size: 20px;
+  color: #002157;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#guests p:last-child
+{
+  font-size: 17px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#guestsTab
+{
+  display: none;
+}
+
+@media screen and (min-width: 930px) {
+
+  .contactForm
+  {
+    padding-left: 40px;
+  }
+
+  .contactForm div
+  {
+    width: 430px;
+  }
+
+  .contactForm div input
+  {
+    width: 200px;
+  }
+
+  #emailForm input
+{
+  width: 407px;
+  padding: 5px;
+}
+
+#comments textarea
+{
+  width: 407px;
+}
+
+#addressInfo
+{
+  display: block;
+  margin-right: auto;
+  width: 300px;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+#addressInfo h2
+{
+  text-align: left;
+  margin-left: 7px;
+}
+
+#addressInfo ul li
+{
+  text-align: left;
+}
+
+#guestsTab
+{
+  display: block;
+  margin-left: auto;
+  width: 400px;
+  margin-top: -230px;
+  margin-right: 80px;
+
+}
+
+#guests
+{
+  display: none;
+}
+
+#guestsTab h2
+{
+  font-size: 30px;
+  font-weight: bold;
+  color: #002157;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+#guestsTab h3
+{
+  font-size: 23px;
+  color: #002157;
+  text-align: left;
+}
+
+#guestsTab p
+{
+  text-align: left;
+  font-size: 20px;
+  color: #002157;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#guestsTab p:last-child
+{
+  font-size: 17px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+}
+
+@media screen and (min-width: 1060px) {
+
+  #guestsTab
+  {
+    margin-right: 130px;
+  }
+
+  #addressInfo
+  {
+    margin-left: 260px;
+  }
+}
